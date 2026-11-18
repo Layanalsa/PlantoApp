@@ -11,8 +11,30 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "PlantoAPP", "opaque-folders": [ "Model", "Viwe Model" ], "target-membership": [ "PlantoAPP" ] },
     {
+      "kind": "folder",
+      "path": "Planto",
+      "membership-exceptions": [
+        {
+          "target": "PlantoAPP",
+          "inclusions": [
+            "Model/PlantModel.swift",
+            "Services/NotificationManager.swift",
+            "View/MyApp.swift",
+            "View/MyPlantsView.swift",
+            "View/SetReminderView.swift",
+            "View/TodayReminderView.swift",
+            "Viwe Model/PlantsViewModel.swift",
+            "Viwe Model/SetReminderViewModel.swift",
+          ],
+        }, {
+          "build-phase": "PlantoAPP/compile-sources",
+          "inclusions": [
+            "Viwe Model/Assets.xcassets",
+          ],
+        },
+      ],
+    }, {
       "kind": "group",
       "name": "Products",
       "children": [
@@ -32,6 +54,7 @@
         "resources",
       ],
       "build-settings": {
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
         "CODE_SIGN_STYLE": "Automatic",
         "CURRENT_PROJECT_VERSION": "1",
         "DEVELOPMENT_TEAM": "28PGXU3347",
@@ -39,6 +62,7 @@
         "ENABLE_PREVIEWS": "YES",
         "ENABLE_USER_SELECTED_FILES": "readonly",
         "GENERATE_INFOPLIST_FILE": "YES",
+        "INFOPLIST_KEY_CFBundleDisplayName": "Planto",
         "INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]": "YES",
         "INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]": "YES",
         "INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]": "YES",
@@ -49,6 +73,7 @@
         "INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]": "UIStatusBarStyleDefault",
         "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad": "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
         "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone": "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
+        "INFOPLIST_KEY_UIUserInterfaceStyle": "Dark",
         "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
         "LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]": "@executable_path/../Frameworks",
         "MARKETING_VERSION": "1.0",
