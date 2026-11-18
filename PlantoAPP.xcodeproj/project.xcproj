@@ -11,7 +11,7 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "PlantoAPP", "opaque-folders": [ "Model" ], "target-membership": [ "PlantoAPP" ] },
+    { "kind": "folder", "path": "PlantoAPP", "opaque-folders": [ "Model", "Viwe Model" ], "target-membership": [ "PlantoAPP" ] },
     {
       "kind": "group",
       "name": "Products",
